@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 139, 139, 0.8); /* Slightly transparent background */
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Projects Grid Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    margin-bottom: 1rem;
+    width: 100%; /* Make the image take up the full width of the container */
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for content */
+    border-radius: 8px;
+}
+
+/* Element Styles */
+article, aside, figure, form, table, blockquote {
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    grid-row: auto;
+    grid-column: auto;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table th {
+    background: #004d40; /* Dark teal background for table headers */
+    color: rgb(255, 255, 255);
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Video Styles */
+video {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Blockquote Styles */
+blockquote {
+    border-left: 4px solid blue;
+    padding-left: 10px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 139, 139, 0.8); /* Slightly transparent background */
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
